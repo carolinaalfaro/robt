@@ -1,0 +1,268 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	display: block;
+	margin: 0;
+}
+
+/* When writing CSS classes it is VERY important that you use hyphen delimited strings (square-div and NOT squareDiv) */
+/* Addtionally, you should know what the class does just by looking at the name (the name should be DESCRIPTIVE) */
+/* When thinking about sizing elements on your page, there are many different units you can use = https://www.w3schools.com/cssref/css_units.asp */
+
+.top-row {
+	height: 8%;
+	width: 100%;
+	position: fixed;
+
+}
+.top-second {
+	height: 12%;
+	width: 100%;
+}
+.top-third {
+	margin: 0;
+	height: 10%;
+	width: 100%;
+	display: flex;
+}
+.thirdmini-1 {
+	width: calc(100%/3);
+}
+.thirdmini-2 {
+	width: calc(100%/3);
+}
+.thirdmini-3 {
+	width: calc(100%/3);
+}
+.top-fourth {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+.fourth_one {
+	display: block;
+	height: 100%;
+	width: 50%;
+}
+.fourth_two {
+	display: block;
+	height: 100%;
+	width: 50%;
+}
+.parent {
+	display: block;
+	height: 50%;
+	width: 100%;
+}
+.square_one {
+	width: 100%;
+	height: 90%;
+}
+
+.right_square {
+	position: center;
+	width: 100%;
+	height: 10%;
+}
+.mini_label {
+	height: 100%;
+	width: 50%;
+	border: 1px solid black;
+}
+.purple{
+	background-color: #4B0082;
+}
+.lightpurple{
+	background-color: #ceb5d6;
+}
+.grey {
+	background-color: #968F92;
+}
+.lightgrey {
+	background-color: #eae1eb;
+}
+.blue {
+	background-color: #0F1C4D;
+}
+.black {
+	background-color: #000000;
+}
+
+/*This is the background color, green, is used to replace the background color of the slots when the correct images are placed inside of them, as a sign to inform the user that the image he/she placed for that individual slot is correct*/
+.green {
+	background-color: #008000;
+}
+/*This is the background color, red, is used to replace the background color of the slots when the incorrect images are placed inside of them, as a sign to inform the user that the image he/she placed for that individual slot is incorrect*/
+.red {
+	background-color: #FF0000;
+}
+.lightblue {
+	background-color: #263857;
+}
+.center-content {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+/* This class is used on most of my images to restrict the size so it stays completely within it's parent div */
+
+.restrict-img-size {
+	max-height: 100%;
+	max-width: 100%;
+}
+/* This class allows my images to zoom when the mouse hovers over them*/
+.grow {
+	transition: all .1s ease-in-out;
+}
+.grow:hover{
+	transform: scale(1.2);
+}
+p {
+	font-family: fantasy;
+	font-size: 50px;
+	text-align: center;
+	color: black;
+}
+p2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+p3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+.first { 
+height: 100%;
+width:25%;
+} 
+
+
+.second { 
+height: 100%;
+width:25%;
+} 
+
+
+.third { 
+height: 100%;
+width:25%;
+} 
+
+.fourth { 
+height: 100%;
+width:25%;
+} 
+
+
+
+
+/*
+ul {
+	list-style-type:none;
+	overflow:hidden;
+	padding: 0;
+	position:fixed;
+	top: 0;
+	width: 25%;
+	height: 12%;
+
+} 
+li{ 
+	float: left;
+} 
+
+li a {
+	display: flex;
+	border: 2px black solid;
+	background-color: #ffffff;
+	text-align: center;
+	padding:14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+	width:100%
+	
+} 
+
+li a:hover{ 
+	width: 100%
+}
+*/
+
+nav {
+	font-family: monospace;
+	height: 100%;
+}
+
+ul {
+  background: darkorange;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+li {
+	color: #fff;
+  background: #4B0082;
+	display: block;
+	float: left;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+  width: 25%;
+  height: 100%;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+	background: grey;
+	cursor: pointer;
+}
+
+ul li ul {
+	background: #6601C6;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
+}
+.empty{
+	height: 100%;
+	width: 10%;
+	background-color: #4B0082;
+}
+.nav-content{
+	height: 100%;
+	width: 80%;
+	background-color: black;
+}
+.grow {
+	transition: all .1s ease-in-out;
+}
+.grow:hover{
+	transform: scale(1.1);
+}
