@@ -26,13 +26,13 @@ body {
 	display: flex;
 }
 .thirdmini-1 {
-	width: calc(100%/3);
+	width: 20%;
 }
 .thirdmini-2 {
-	width: calc(100%/3);
+	width: 80%;
 }
 .thirdmini-3 {
-	width: calc(100%/3);
+	width: 20%;
 }
 .top-fourth {
 	height: 100%;
@@ -130,7 +130,7 @@ p2 {
 	text-align: center;
 }
 p3 {
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	font-size: 15px;
 	text-align: center;
 	color: white;
@@ -230,13 +230,13 @@ li:hover {
 ul li ul {
 	background: #6601C6;
 	visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
+    opacity: 0;
+    min-width: 5rem;
 	position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
 	left: 0;
-  display: none;
+    display: none;
 }
 
 ul li:hover > ul,
@@ -265,4 +265,16 @@ ul li ul li {
 }
 .grow:hover{
 	transform: scale(1.1);
+}
+
+li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+h1{
+	font-family:  Impact, Charcoal, sans-serif;
+	font-size: 60px;
 }
