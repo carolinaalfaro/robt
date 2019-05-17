@@ -7,3 +7,7 @@ var stick = header.offsetTop;
 function myFunction() {
 	if (window.pageYOffset > sticky) 
 window.onscroll = function() {myFunction()};
+
+function nextweb (el) {
+	document.location.href="https://rayadajani.github.io/Phase8/";
+}
